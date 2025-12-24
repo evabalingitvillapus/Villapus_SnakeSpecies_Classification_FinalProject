@@ -1,0 +1,45 @@
+name: villapus_flutter
+description: "A Flutter app for image-based analysis using camera and TFLite."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+
+  # ML / Image
+  tflite_flutter: ^0.12.1
+  image: ^3.3.0
+
+  # Camera & Media
+  camera: ^0.11.3
+  image_picker: ^1.2.1
+
+  # Storage & Paths
+  path: ^1.9.0
+  sqflite: ^2.4.1
+  path_provider: ^2.1.5
+
+  # Charts
+  fl_chart: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/model_unquant.tflite
+    - assets/labels.txt
+    - assets/images/
